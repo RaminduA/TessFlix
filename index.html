@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TessFlix</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+</head>
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        body{
+            background-color: #1c1b1b;
+        }
+        #selected_movie{
+            height: 60%;
+        }
+        #sub_movies{
+            position: absolute;
+            display: flex;
+            bottom: 120px;
+            left: 90px;
+            height: 220px;
+            background-color: #1c1b1b;
+        }
+        #search{
+            position: absolute;
+            top: 50px;
+            left: 200px;
+            width: 50%;
+            background-color: #c6c4c4;
+        }
+    </style>
+</head>
+<body>
+<div class="col-sm-9">
+    <select id="search" class="combo form-control">
+        <option value="" selected disabled hidden>Search here...</option>
+    </select>
+</div>
+<section class="container-fluid">
+
+    <section id="selected_movie" class="row">
+        <img src="assets/images/m2.png" alt="">
+    </section>
+    <section id="sub_movies">
+        <div class="container-fluid">
+            <img id="img1" src="assets/images/sm1.png" width="100%" alt="">
+        </div>
+        <div class="container-fluid">
+            <img id="img2" src="assets/images/sm2.png" width="100%" alt="">
+        </div>
+        <div class="container-fluid">
+            <img id="img3" src="assets/images/sm3.png" width="100%" alt="">
+        </div>
+        <div class="container-fluid">
+            <img id="img4" src="assets/images/sm4.png" width="100%" alt="">
+        </div>
+        <div class="container-fluid">
+            <img id="img5" src="assets/images/sm5.png" width="100%" alt="">
+        </div>
+    </section>
+</section>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+<!--<script src="libs/cf_api.js"></script>-->
+<script src="datasets/links.js"></script>
+<script src="datasets/movies.js"></script>
+<script src="datasets/ratings.js"></script>
+<script src="datasets/tags.js"></script>
+<script src="datasets/toy_dataset.js"></script>
+</body>
+</html>
